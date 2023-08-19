@@ -14,4 +14,8 @@ class HomeController extends Controller
     public function getHubungi () {
         return view('hubungi');
     }
+
+    public function getTentang() {
+        return view('tentang');
+    }
 }

@@ -14,5 +14,20 @@
 </head>
 <body>
     @yield('content')
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dropdown').hover(function () {
+                $(this).addClass('show');
+                $(this).find('.dropdown-menu').addClass('show');
+            }, function () {
+                $(this).removeClass('show');
+                $(this).find('.dropdown-menu').removeClass('show');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -244,3 +244,7 @@
     width: 150px;
     height: 150px;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

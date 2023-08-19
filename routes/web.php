@@ -17,3 +17,5 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'getHome'])->name('get-home');
 
 Route::get('/hubungi-kami', [HomeController::class, 'getHubungi'])->name('get-hubungi');
+
+Route::get('/tentang-kami', [HomeController::class, 'getTentang'])->name('get-tentang');

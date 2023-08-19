@@ -9,9 +9,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="{{url('/')}}" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="{{url('/')}}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Beranda</a>
+                    <a href="{{url('tentang-kami')}}" class="nav-item nav-link {{ Request::url() == url('/tentang-kami') ? 'active' : '' }}">Tentang Kami</a>
+                    <a href="service.html" class="nav-item nav-link">Layanan</a>
                     <a href="price.html" class="nav-item nav-link">Pricing</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -24,7 +24,7 @@
                             <a href="search.html" class="dropdown-item">Search</a>
                         </div>
                     </div>
-                    <a href="{{url('hubungi-kami')}}" class="nav-item nav-link">Hubungi Kami</a>
+                    <a href="{{url('hubungi-kami')}}" class="nav-item nav-link {{ Request::url() == url('/hubungi-kami') ? 'active' : '' }}">Hubungi Kami</a>
                 </div>
             </div>
         </nav>
