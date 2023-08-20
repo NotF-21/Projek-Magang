@@ -97,8 +97,15 @@
 }
 
 .hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
+    background-image:  url(../images/jumbo2.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hubungi-header {
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hubungi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .service-item {
