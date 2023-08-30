@@ -18,4 +18,8 @@ class HomeController extends Controller
     public function getTentang() {
         return view('tentang');
     }
+
+    public function getUGD() {
+        return view('layanan.ugd');
+    }
 }

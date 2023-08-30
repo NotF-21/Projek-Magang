@@ -1,9 +1,9 @@
 <div class="container-fluid sticky-top bg-white shadow-sm">
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-            <a href="{{url('/')}}" class="navbar-brand">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>Medinova</h1>
-            </a>
+            <a class="navbar-brand" href="{{url('/')}}">
+                <img src="{{asset("images/logotransp.png")}}" width="15%" height="15%" alt="">
+              </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -11,19 +11,18 @@
                 <div class="navbar-nav ms-auto py-0">
                     <a href="{{url('/')}}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Beranda</a>
                     <a href="{{url('tentang-kami')}}" class="nav-item nav-link {{ Request::url() == url('/tentang-kami') ? 'active' : '' }}">Tentang Kami</a>
-                    <a href="service.html" class="nav-item nav-link">Layanan</a>
-                    <a href="price.html" class="nav-item nav-link">Pricing</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
                         <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                            <a href="team.html" class="dropdown-item">The Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="appointment.html" class="dropdown-item">Appointment</a>
-                            <a href="search.html" class="dropdown-item">Search</a>
+                            <a href="{{url('/layanan/unit-gawat-darurat')}}" class="dropdown-item">Unit Gawat Darurat</a>
+                            <a href="detail.html" class="dropdown-item">Rawat Inap</a>
+                            <a href="team.html" class="dropdown-item">Rawat Jalan</a>
+                            <a href="testimonial.html" class="dropdown-item">Poligigi</a>
+                            <a href="appointment.html" class="dropdown-item">Vaksinasi</a>
+                            <a href="search.html" class="dropdown-item">Uji Laboratorium</a>
                         </div>
                     </div>
+                    <a href="{{url('tentang-kami')}}" class="nav-item nav-link {{ Request::url() == url('/tentang-kami') ? 'active' : '' }}">Tim Medis</a>
                     <a href="{{url('hubungi-kami')}}" class="nav-item nav-link {{ Request::url() == url('/hubungi-kami') ? 'active' : '' }}">Hubungi Kami</a>
                 </div>
             </div>
