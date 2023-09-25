@@ -22,5 +22,9 @@ Route::get('/tentang-kami', [HomeController::class, 'getTentang'])->name('get-te
 
 Route::group(['prefix' => 'layanan'],function(){
     Route::get('unit-gawat-darurat', [HomeController::class, 'getUGD'])->name('ugd');
-
+    Route::get('rawat-inap', [HomeController::class, 'getri'])->name('ri');
+    Route::get('rawat-jalan', [HomeController::class, 'getrj'])->name('rj');
+    Route::get('poligigi', [HomeController::class, 'getPoli'])->name('poli');
+    Route::get('vaksinasi', [HomeController::class, 'getv'])->name('v');
+    Route::get('uji-laboratorium', [HomeController::class, 'getLab'])->name('lab');
 });

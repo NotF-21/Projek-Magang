@@ -15,11 +15,11 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
                         <div class="dropdown-menu m-0">
                             <a href="{{url('/layanan/unit-gawat-darurat')}}" class="dropdown-item">Unit Gawat Darurat</a>
-                            <a href="detail.html" class="dropdown-item">Rawat Inap</a>
-                            <a href="team.html" class="dropdown-item">Rawat Jalan</a>
-                            <a href="testimonial.html" class="dropdown-item">Poligigi</a>
-                            <a href="appointment.html" class="dropdown-item">Vaksinasi</a>
-                            <a href="search.html" class="dropdown-item">Uji Laboratorium</a>
+                            <a href="{{url('/layanan/rawat-inap')}}" class="dropdown-item">Rawat Inap</a>
+                            <a href="{{url('/layanan/rawat-jalan')}}" class="dropdown-item">Rawat Jalan</a>
+                            <a href="{{url('/layanan/poligigi')}}" class="dropdown-item">Poligigi</a>
+                            <a href="{{url('/layanan/vaksinasi')}}" class="dropdown-item">Vaksinasi</a>
+                            <a href="{{url('/layanan/uji-laboratorium')}}" class="dropdown-item">Uji Laboratorium</a>
                         </div>
                     </div>
                     <a href="{{url('tentang-kami')}}" class="nav-item nav-link {{ Request::url() == url('/tentang-kami') ? 'active' : '' }}">Tim Medis</a>
